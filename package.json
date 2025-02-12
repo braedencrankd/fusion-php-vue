@@ -27,8 +27,28 @@
       {
         "language": "vuephp",
         "scopeName": "source.vuephp",
-        "path": "./syntaxes/phpInVue.tmLanguage.json"
+        "path": "./syntaxes/phpInVue.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.php": "php",
+          "source.vue": "vue"
+        }
       }
-    ]
+    ],
+    "languageServer": {
+      "embeddedLanguages": {
+        "meta.embedded.block.php": "php",
+        "source.vue": "vue"
+      }
+    }
+  },
+  "dependencies": {
+    "vscode-languageclient": "^8.1.0"
+  },
+  "extensionDependencies": [
+    "bmewburn.vscode-intelephense-client",
+    "octref.vetur"
+  ],
+  "devDependencies": {
+    "@types/vscode": "^1.85.0"
   }
 }
