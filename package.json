@@ -1,0 +1,34 @@
+{
+  "name": "fusion-php-vue",
+  "displayName": "fusion-php-vue",
+  "description": "Allows for Fusion PHP <php> tag highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vuephp",
+        "aliases": [
+          "VuePHP",
+          "vuephp"
+        ],
+        "extensions": [
+          ".vue"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "vuephp",
+        "scopeName": "source.vuephp",
+        "path": "./syntaxes/phpInVue.tmLanguage.json"
+      }
+    ]
+  }
+}
