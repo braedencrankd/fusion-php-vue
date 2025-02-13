@@ -10,43 +10,40 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [
-      {
-        "id": "vuephp",
-        "aliases": [
-          "VuePHP",
-          "vuephp"
-        ],
-        "extensions": [
-          ".vue"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
     "grammars": [
       {
-        "language": "vuephp",
-        "scopeName": "source.vuephp",
+        "language": "vue",
+        "scopeName": "text.html.vue.php",
         "path": "./syntaxes/phpInVue.tmLanguage.json",
         "embeddedLanguages": {
-          "meta.embedded.block.php": "php",
-          "source.vue": "vue"
+          "source.php": "php",
+          "text.html.basic": "html",
+          "source.js": "javascript"
         }
       }
     ],
     "languageServer": {
       "embeddedLanguages": {
-        "meta.embedded.block.php": "php",
-        "source.vue": "vue"
+        "meta.embedded.block.php": "php"
       }
-    }
+    },
+    "languages": [
+      {
+        "id": "php",
+        "extensions": [
+          ".php"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ]
   },
   "dependencies": {
     "vscode-languageclient": "^8.1.0"
   },
   "extensionDependencies": [
     "bmewburn.vscode-intelephense-client",
-    "octref.vetur"
+    "octref.vetur",
+    "PHP.php-grammar"
   ],
   "devDependencies": {
     "@types/vscode": "^1.85.0"
