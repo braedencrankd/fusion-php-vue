@@ -3,6 +3,11 @@
   "displayName": "fusion-php-vue",
   "description": "Allows for Fusion PHP <php> tag highlighting",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/braedencrankd/fusion-php-vue"
+  },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.97.0"
   },
